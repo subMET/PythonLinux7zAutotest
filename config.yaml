@@ -1,0 +1,10 @@
+folder_in: /home/user2/tst/file
+folder_out: /home/user2/tst/out
+folder_ext: /home/user2/tst/ext
+folder_badarx: /home/user2/tst/badarx
+count: 2
+size: 1M
+format: zip
+host: 0.0.0.0
+user: user2
+passwd: 1111
