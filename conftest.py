@@ -10,10 +10,10 @@ with open("config.yaml") as f:
     data = yaml.safe_load(f)
 
 
-folder_in = data["folder_in"]
-folder_out = data["folder_out"]
-folder_ext = data["folder_ext"]
-folder_badarx = data["folder_badarx"]
+folder_in = "{}/file".format(data["working_folder"])
+folder_out = "{}/out".format(data["working_folder"])
+folder_ext = "{}/ext".format(data["working_folder"])
+folder_badarx = "{}/badarx".format(data["working_folder"])
 
 
 @pytest.fixture()

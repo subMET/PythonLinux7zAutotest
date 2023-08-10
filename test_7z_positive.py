@@ -4,9 +4,9 @@ import yaml
 with open("config.yaml") as f:
     data = yaml.safe_load(f)
 
-folder_in = data["folder_in"]
-folder_out = data["folder_out"]
-folder_ext = data["folder_ext"]
+folder_in = "{}/file".format(data["working_folder"])
+folder_out = "{}/out".format(data["working_folder"])
+folder_ext = "{}/ext".format(data["working_folder"])
 
 
 def test_step1(deploy, make_folders, clear_folders, make_files):

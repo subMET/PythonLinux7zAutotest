@@ -1,7 +1,4 @@
-folder_in: /home/user2/tst/file
-folder_out: /home/user2/tst/out
-folder_ext: /home/user2/tst/ext
-folder_badarx: /home/user2/tst/badarx
+working_folder: /home/user2/tst
 count: 2
 size: 1M
 format: zip

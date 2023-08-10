@@ -4,8 +4,8 @@ import yaml
 with open("config.yaml") as f:
     data = yaml.safe_load(f)
 
-folder_out = data["folder_badarx"]
-folder_ext = data["folder_ext"]
+folder_out = "{}/badarx".format(data["working_folder"])
+folder_ext = "{}/ext".format(data["working_folder"])
 
 
 def test_step1():
