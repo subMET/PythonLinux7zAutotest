@@ -34,8 +34,8 @@ def make_files():
     for i in range(data["count"]):
         filename = ''.join(random.choices(string.ascii_uppercase + string.digits, k=5))
         if ssh_checkout_positive(data["host"], data["user"], str(data["passwd"]),
-                                 "cd {}; dd if=/dev/urandom of={} bs=1M count=1 "
-                                 "iflag=fullblock".format(folder_in, filename), ""):
+                                 "cd {}; dd if=/dev/urandom of={} bs={} count=1 "
+                                 "iflag=fullblock".format(folder_in, filename, data["size"]), ""):
             list_off_files.append(filename)
     return list_off_files
 
